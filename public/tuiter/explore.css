@@ -80,18 +80,27 @@ ul.wd-no-bullets {
   border: 1px solid #2f3336;
   width: 560px;
   height: 70px;
+  border-bottom:none;
+}
+
+.wd-solid-border-2-all {
+  border: 1px solid #2f3336;
+  width: 560px;
+  height: 70px;
 }
 
 .wd-solid-border3 {
   border: 1px solid #2f3336;
   width: 560px;
   height: 122px;
+  border-bottom: none;
 }
 
 .wd-solid-border4 {
   border: 1px solid #2f3336;
   width: 560px;
   height: 127px;
+  border-bottom: none;
 }
 
 .wd-position-right {
@@ -140,4 +149,5 @@ mark.wd-gray {
   background: darkgray;
   position: relative;
   left: 16px;
+  border-bottom: none;
 }

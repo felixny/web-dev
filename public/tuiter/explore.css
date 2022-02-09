@@ -1,0 +1,150 @@
+.rounded-corners-all-around {
+  border-radius: 20px;
+  background-color: darkgray;
+  color: white;
+  height: 30px;
+  border: 1px darkgray;
+}
+
+.relative-right {
+  position: relative;
+  left: 16px;
+}
+
+.border-bottom {
+  border-bottom: #1da1f2 solid;
+  color: #1da1f2;
+  padding: 16px 0px;
+  margin: 0px 16px;
+}
+
+.fg-color-darkgray {
+  color: #767d6e;
+  font-size: 13px;
+}
+
+.fg-color-white {
+  color: white;
+}
+
+.white-16 {
+  color: white;
+  font-size: 13px;
+}
+
+.white-13 {
+  color: white;
+  font-size: 13px;
+}
+
+li.float {
+  float: left;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+}
+
+li a {
+  position: relative;
+  left: 0px;
+  display: inline-block;
+  color: #767d6e;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.solid-border {
+  position: relative;
+  left: 16px;
+  border: 1px solid #2f3336;
+  width: 560px;
+  height: 95px;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  position: relative;
+  left: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #767d6e;
+}
+
+.solid-border2 {
+  border: 1px solid #2f3336;
+  width: 560px;
+  height: 70px;
+}
+
+.solid-border3 {
+  border: 1px solid #2f3336;
+  width: 560px;
+  height: 122px;
+}
+
+.solid-border4 {
+  border: 1px solid #2f3336;
+  width: 560px;
+  height: 127px;
+}
+
+.position-right {
+  position: relative;
+  left: 16px;
+  top: 10px;
+}
+
+.border-2-font {
+  font-size: 13px;
+  color: #767d6e;
+}
+
+.img1 {
+  float: right;
+  position: relative;
+  right: 16px;
+  bottom: 37px;
+  border-radius: 20px;
+}
+
+.img2 {
+  float: right;
+  position: relative;
+  right: 16px;
+  bottom: 19px;
+  border-radius: 20px;
+}
+
+.img0 {
+  float: right;
+  position: relative;
+  right: 12px;
+  top: 3px;
+}
+
+mark.gray {
+  font-size: 13px;
+  color: #767d6e;
+  background: none;
+}
+
+.img-center {
+  position: relative;
+  top: 2px;
+}
+
+.solid-border-beginning {
+  border: 1px solid #2f3336;
+  width: 560px;
+  height: 5px;
+  background: darkgray;
+  position: relative;
+  left: 16px;
+}

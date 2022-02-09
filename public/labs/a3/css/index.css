@@ -121,6 +121,7 @@ p#id-selector-2 {
 }
 .pos-relative {
     position: relative;
+    height: 120px;
 }
 
 .pos-absolute-10-10 {

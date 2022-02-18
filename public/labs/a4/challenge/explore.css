@@ -1,6 +1,5 @@
 .form {
   position: relative;
-  padding-right: rem;
 }
 
 .form .fa-search {
@@ -8,7 +7,7 @@
   text-align: center;
   padding-top: 12px;
   left: 20px;
-  color: black;
+  color: rgb(118, 118, 118);
 }
 
 .form span {
@@ -16,7 +15,7 @@
   right: 17px;
   top: 13px;
   padding: 1px;
-  border-left: 1px solid #d1d5db;
+  border-left: 1px solid rgb(59, 59, 59);
 }
 
 .left-pan {
@@ -40,47 +39,10 @@
 .form-control {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
-
+  background-color: rgb(59, 59, 59);
   border-radius: 50px;
-}
-
-@media (min-width: 100px) {
-  .text-sm {
-    font-size: 1.746rem;
-    line-height: 2.3;
-    padding: 0 1.2rem;
-    color: black;
-    margin: 0;
-    color: white;
-    height: 2rem;
-    margin-top: -3.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .text {
-    font-size: 1.88rem;
-    line-height: 2.1;
-    padding: 0 1.3rem;
-    color: black;
-    margin: 0;
-    color: white;
-    height: 2rem;
-    margin-top: -3.5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .text {
-    font-size: 2rem;
-    line-height: 1.9;
-    padding: 0 1.2rem;
-    color: black;
-    margin: 0;
-    color: white;
-    height: 2rem;
-    margin-top: -3.5rem;
-  }
+  border: 1px solid rgb(59, 59, 59);
+  color: white;
 }
 
 @media (min-width: 768px) and (max-width: 1399px) {
@@ -119,9 +81,14 @@ mark.wd-gray {
   }
 }
 
+.img-fluid-icon-dark {
+  width: 80px;
+  border-radius: 15px;
+}
+
 .wd-img-size {
-  margin-left: -24px;
-  margin-right: -24px;
+  border: 1px solid rgb(118, 118, 118);
+  outline-offset: -2px;
 }
 
 .wd-mx-2-custom {
@@ -201,4 +168,91 @@ mark.wd-gray {
   .row-xxl {
     --bs-gutter-x: 1.4rem;
   }
+}
+
+.list-group-item {
+  background-color: black;
+  color: white;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: rgb(118, 118, 118);
+}
+
+.nav a:hover {
+  color: white;
+}
+.nav .active {
+  color: white;
+  background-color: black;
+}
+
+@media (min-width: 100px) {
+  .text{
+    font-size: 1.746rem;
+    line-height: 2.3;
+    padding: 0 0.4rem;
+    color: black;
+    margin: 0;
+    color: white;
+    height: 2rem;
+    margin-top: -3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 1.88rem;
+    line-height: 2.1;
+    padding: 0 0.54rem;
+    color: black;
+    margin: 0;
+    color: white;
+    height: 2rem;
+    margin-top: -3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .text {
+    font-size: 2rem;
+    line-height: 1.9;
+    padding: 0 0.5rem;
+    color: black;
+    margin: 0;
+    color: white;
+    height: 2rem;
+    margin-top: -3.5rem;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: rgb(118, 118, 118);
+  background-clip: border-box;
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 0rem;
+}
+
+.list-group-item-dark {
+  background-color: rgb(34, 30, 30);
+  color: white;
+}
+
+.btn-primary-white {
+  color: black;
+  background-color: white;
+  border-color: white;
 }

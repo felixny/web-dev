@@ -202,3 +202,9 @@ mark.wd-gray {
     --bs-gutter-x: 1.4rem;
   }
 }
+
+@media (min-width: 992px) {
+  .wd-ps-col3 {
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,60 @@
+import PostSummaryList from "../PostSummaryList/index.js";
+
+const ExploreComponent = () => {
+    return (`
+           <!-- search field and cog -->
+           <div class="row row-sm row-xxl row-xl row-lg row-md">
+
+
+          <div class="col-11 ">
+            <div class="form "> <i class="fa fa-search "></i> <input type="text" class="form-control form-input"
+                placeholder="Search Twitter"> <span class="left-pan"></span> </div>
+          </div>
+
+          <div class="col-1 my-auto wd-gearicon">
+            <i class="fa-solid fa-gear fa-2x wd-imagesm" style="color: #0d6efd"></i>
+          </div>
+
+        </div>
+
+        <!-- navigation  -->
+        <div class="wd-mx-2-custom">
+          <div class="row mt-2  ">
+            <ul class="nav nav-tabs  ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#for-you.html">For you</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#trending.html">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sports.html">Sports</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#entertainment.html">Entertainment</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- starship image -->
+          <div class="row wd-img-size mt-2 ">
+            <img class="img-fluid"
+              src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg" />
+            <div class="text text-sm"><span><strong>SpaceX's Starship</strong></span></div>
+
+          </div>
+
+          <!-- list begin -->
+          <div class="row list-group wd-mx-1-custom">
+          ${PostSummaryList()}
+          </div>
+          
+
+        </div>
+        
+    `);
+}
+export default ExploreComponent;

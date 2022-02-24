@@ -16,6 +16,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
             </ul>
             ${PostSummaryList()}
         </div>
+        <div class ="mt-4"></div>
         </div>
     `);
 })($);

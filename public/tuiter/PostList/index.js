@@ -1,12 +1,11 @@
-import PostSummaryItem from "./PostSummaryItem.js";
+import PostItem from "./PostItem.js";
 import posts from "./posts.js";
-
 const WhoToFollowList = () => {
     return (`
-            <ul class="list-group ">
+            <ul class="list-group">
             <!-- continue here -->
             ${posts.map(post => {
-        return (PostSummaryItem(post));
+        return (PostItem(post));
     }).join('')
         }
             </ul>

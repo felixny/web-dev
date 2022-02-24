@@ -40,7 +40,7 @@ const ExploreComponent = () => {
           </div>
 
           <!-- starship image -->
-          <div class="row wd-img-size mt-2 ">
+          <div class="row wd-img-size mt-2 wd-pb">
             <img class="img-fluid"
               src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg" />
             <div class="text text-sm"><span><strong>SpaceX's Starship</strong></span></div>

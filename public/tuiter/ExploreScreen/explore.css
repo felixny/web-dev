@@ -95,7 +95,7 @@
   .wd-p-mid-col {
     margin: 0;
     word-wrap: break-word;
-    width:500px;
+    width: 500px;
   }
 }
 
@@ -203,6 +203,12 @@ mark.wd-gray {
   }
 }
 
+@media (min-width: 992px) {
+  .wd-ps-col3 {
+    padding-right: 1.1rem;
+  }
+}
+
 .wd-mx-1-custom {
   margin-left: 0px;
   margin-right: -12px;
@@ -231,4 +237,8 @@ mark.wd-gray {
 .wd-list-group-post:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.wd-pb{
+  padding-bottom: 0.5rem;
 }

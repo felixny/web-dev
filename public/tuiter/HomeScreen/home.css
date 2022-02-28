@@ -55,7 +55,7 @@
 
 .wd-img-round {
   border-radius: 20px 20px 0px 0px;
-  border: 1px solid gray;
+
 }
 
 .wd-img-round-ny {
@@ -70,7 +70,7 @@
 
 .wd-lightgray {
   border-radius: 0px 0px 20px 20px;
-  border: 1px solid gray;  
+  border: 1px solid rgb(127, 118, 104)!important;
 }
 
 @media (min-width: 1400px) {
@@ -88,9 +88,16 @@
   border-bottom-left-radius: 20px;
 }
 
+.wd-list-group-item-first:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid rgb(127, 118, 104)!important;
+}
+
 .wd-img-size {
-  margin-left: -1px;
-  margin-right: -1px;
+  margin-left: -0.1px;
+  margin-right: -0.01px;
   margin-bottom: -1px;
   padding: 0 !important;
+  
 }

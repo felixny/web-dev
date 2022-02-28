@@ -1,18 +1,17 @@
 const PostItem = (posts) => {
     var title = ''
-    if (`${posts.title}`.includes("#B")) {
+    if (`${posts.title}`.includes("#H")) {
         title = `${posts.title}`
-        title = title.replace("#B", `<a href="https://${posts.link}">`);
-        title = title.replace("#B!", `</a>`);
-     
+        title = title.replace("#H", `<a href="https://${posts.link}">`);
+        title = title.replace("#H!", `</a>`);
     }
 
     var innerHtmlLink = ''
     if (`${posts.link}` != '') {
         innerHtmlLink = `
         <li class="list-group-item wd-lightgray">
-        <span class=""> ${posts.desc1}</span><br/>
-        <span class="wd-gray ">${posts.desc2}</span>
+        <span class=""> ${posts.post_title}</span><br/>
+        <span class="wd-gray ">${posts.post}</span>
         <br/>
         <div class="wd-gray"><i class="fas fa-link"></i>
         <a href="https://${posts.link}" class="wd-gray">${posts.link}</a></div>
@@ -21,9 +20,13 @@ const PostItem = (posts) => {
 
     var pic = ''
     if ((`${posts.image}`).includes("nypost")) {
-        pic = `<img src=${posts.image} class="wd-inner wd-img-round-ny img-fluid"/>`
+        pic = `<li class="list-group-item wd-list-group-item wd-img-size ">
+        <img src=${posts.image} class="wd-inner wd-img-round-ny img-fluid "/>
+        </li>`
     } else {
-        pic = `<img src=${posts.image} class="wd-inner wd-img-round img-fluid"/>`
+        pic = `<li class="list-group-item wd-list-group-item-first wd-img-size ">
+        <img src=${posts.image} class="wd-inner wd-img-round img-fluid"/>
+        </li>`
     }
 
     return (`
@@ -35,9 +38,7 @@ const PostItem = (posts) => {
             <div class="wd-gray">@${posts.handle} <span>&nbsp;&#183;&nbsp;</span> ${posts.time}</div>
             <div class="wd-title-break pb-2">${title}</div>
             <ul class="list-group ">
-                <li class="list-group-item wd-list-group-item wd-img-size ">
                     ${pic}
-                </li>
                 ${innerHtmlLink}
                 <li class="wd-nostyle wd-gray">
                     <i class="far fa-comment wd-first-icon"></i>${posts.comments}

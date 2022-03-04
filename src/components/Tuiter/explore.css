@@ -219,24 +219,23 @@ mark.wd-gray {
   border-radius: 10px;
 }
 
-.wd-list-group-item:last-child {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+.wd-list-group-item-bottom{
+  border-bottom-left-radius: 5px!important;
+  border-bottom-right-radius: 5px!important;
 }
 
-.wd-list-group {
+/* .wd-list-group {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-}
+} */
 
-.wd-list-group-post:last-child {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+.wd-list-border-top{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
-
-.wd-list-group-post:first-child {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.wd-list-border-bottom{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .wd-pb{

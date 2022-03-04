@@ -9,12 +9,12 @@ const ExploreComponent = () => {
 
 
         <div className="col-11 ">
-          <div className="form "> <i className="fa fa-search "></i> <input type="text" className="form-control form-input"
+          <div className="form "> <i className="fa fa-search "/> <input type="text" className="form-control form-input"
             placeholder="Search Twitter"/> <span className="left-pan"></span> </div>
         </div>
 
         <div className="col-1 my-auto wd-gearicon">
-          <i className="fa-solid fa-gear fa-2x wd-imagesm" style="color: #0d6efd"></i>
+          <i className="fa-solid fa-gear fa-2x wd-imagesm" style={{color: '#0d6efd'}}/>
         </div>
 
       </div>
@@ -44,7 +44,7 @@ const ExploreComponent = () => {
        {/*  <!-- starship image --> */}
         <div className="row wd-img-size mt-2 wd-pb">
           <img className="img-fluid"
-            src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg" />
+            src={'https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg'} />
           <div className="text text-sm"><span><strong>SpaceX's Starship</strong></span></div>
 
         </div>

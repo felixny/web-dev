@@ -3,13 +3,10 @@ import WhoToFollowListItem from "./WhoToFollowListItem";
 import who from "./who.json"
 
 const WhoToFollowList = () => {
-    if (who.id === '5') {
-        var borderbot = <span className="wd-list-group-item-bottom"></span>
-      }
     return (
         <>
-            <ul className="list-group wd-list-group-item-bottom">
-                <a href="#" className="list-group-item wd-list-group "><strong>Who to follow</strong></a>
+            <ul className="list-group ">           
+                <a href="/#" className="list-group-item wd-list-group "><strong>Who to follow</strong></a>
                 {who.map(who => {
                     return (
 
@@ -17,14 +14,10 @@ const WhoToFollowList = () => {
                             <WhoToFollowListItem who={who} />
                         </div>
                     );
-
                 })
                 }
-        {borderbot}
             </ul>
-
         </>
-
     );
 };
 

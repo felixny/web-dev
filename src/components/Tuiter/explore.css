@@ -219,11 +219,6 @@ mark.wd-gray {
   border-radius: 10px;
 }
 
-.wd-list-group-item-bottom{
-  border-bottom-left-radius: 5px!important;
-  border-bottom-right-radius: 5px!important;
-}
-
 /* .wd-list-group {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -234,6 +229,18 @@ mark.wd-gray {
   border-top-right-radius: 0px;
 }
 .wd-list-border-bottom{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.wd-list-border-bottom-5px{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.wd-list-border-top-bot{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }

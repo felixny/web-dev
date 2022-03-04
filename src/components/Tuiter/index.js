@@ -1,7 +1,8 @@
 import React from "react";
 import './explore.css';
-import ExploreScreen from "./ExploreScreen/ExploreScreen";
-
+/* import ExploreScreen from "./ExploreScreen/ExploreScreen"; */
+import HomeScreen from "./HomeScreen/HomeScreen";
+/* import { Link, Route } from "react-router-dom"; */
 
 const Tuiter = () => {
     return (
@@ -9,7 +10,8 @@ const Tuiter = () => {
             {/* <NavigationSidebar active="home" />
             <WhoToFollowListItem/>
             <PostSummaryList/> */}
-          <ExploreScreen/>
+          {/* <ExploreScreen/> */}
+          <HomeScreen/>
             
         </>
     )

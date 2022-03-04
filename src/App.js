@@ -11,10 +11,14 @@ function App() {
     <BrowserRouter>
       <div className="container">
         <Routes>
-          <Route path="/hello" exact={true} element={<HelloWorld />}  />
+          <Route path="/hello" exact={true} element={<HelloWorld />} />
           <Route path="/" exact={true} element={<Labs />} />
           <Route path="/labs" exact={true} element={<Labs />} />
-          <Route path="/tuiter" exact={true} element={<Tuiter />}  />
+          <Route path="/tuiter" exact={true} element={<Tuiter />} />
+          {/* <Route path="/tuiter/home" component={HomeScreen} />
+          <Route path="/tuiter/explore" component={ExploreScreen} /> */}
+
+
         </Routes>
       </div>
     </BrowserRouter>

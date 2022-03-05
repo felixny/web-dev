@@ -4,7 +4,8 @@ const PostList = () => {
     return (
         <ul className="list-group">
             {posts.map(posts => {
-                return (<PostItem posts={posts} />);
+
+                return (<div key={posts.id}> <PostItem posts={posts} /> </div>);
             })}
         </ul>
     );

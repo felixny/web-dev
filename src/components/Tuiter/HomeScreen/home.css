@@ -60,6 +60,7 @@
 
 .wd-img-round-ny {
   border-radius: 20px 20px 20px 20px;
+  border: 1px solid rgb(127, 118, 104)!important;
 }
 
 .wd-nopadding {

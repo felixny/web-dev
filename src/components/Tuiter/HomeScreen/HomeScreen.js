@@ -19,7 +19,7 @@ const HomeScreen = () => {
                     <HomeComponent />
                 </div>
 
-                <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 wd-ps-col3">
+                <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 wd-ps-col3-home">
                     <PostSummaryList />
 
                 </div>

@@ -5,8 +5,9 @@ import ConditionalOutput from "./ConditionalOutput";
 import Styles from "./Styles"
 import TodoItem from "./ToDo/TodoItem";
 import TodoList from "./ToDo/TodoList";
+// import ReduxExamples from "../redux-examples";
 
-const Labs = () => {
+const Labs6 = () => {
     return (
         <div>
         <>
@@ -26,4 +27,4 @@ const Labs = () => {
         </div>
     )
 };
-export default Labs;
+export default Labs6;

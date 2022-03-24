@@ -1,10 +1,8 @@
 [
     {
-      "_id": "123",
+      "_id": "1",
       "topic": "Web Development",
-      "postedBy": {
-        "userName": "ReactJS"
-      },
+      "userName":  "ReactJS",
       "liked": true,
       "verified": false,
       "handle": "ReactJS",
@@ -23,11 +21,9 @@
       }
     },
     {
-      "_id": "567",
+      "_id": "2",
       "topic": "Space",
-      "postedBy": {
-        "userName": "SpaceX"
-      },
+      "userName": "SpaceX",
       "liked": false,
       "verified": false,
       "handle": "spacex",
@@ -47,11 +43,9 @@
       }
     },
     {
-      "_id": "234",
+      "_id": "3",
       "topic": "Space",
-      "postedBy": {
-        "userName": "Scott Manley"
-      },
+      "userName":"Scott Manley",
       "liked": true,
       "verified": true,
       "handle": "DJSnM",
@@ -59,8 +53,8 @@
       "time": "1 day",
       "title": "JavaScript is programming language that can run on browsers as well as desktops",
       "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "logo-image": "./Images/javascript.png",
-      "avatar-image": "./Images/javascript.png",
+      "logo-image": "../Images/javascript.png",
+      "avatar-image": "../Images/javascript.png",
       "tuits": "123K",
       "stats": {
         "comments": 123,
@@ -69,11 +63,9 @@
       }
     },
     {
-      "_id": "345",
+      "_id": "4",
       "topic": "Web Development",
-      "postedBy": {
-        "userName": "jQuery"
-      },
+      "userName":"jQuery",
       "liked": false,
       "verified": false,
       "handle": "jQuery",
@@ -90,11 +82,9 @@
       }
     },
     {
-      "_id": "456",
+      "_id": "5",
       "topic": "Web Development",
-      "postedBy": {
-        "userName": "NodeJS"
-      },
+      "userName": "NodeJS",
       "liked": true,
       "verified": true,
       "handle": "NodeJS",

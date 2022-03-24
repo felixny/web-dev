@@ -1,4 +1,3 @@
-import { toBeInTheDocument } from "@testing-library/jest-dom/dist/matchers";
 import tuits from "../data/tuits.json";
 
 const tuitsReducer = (state = tuits, action) => {

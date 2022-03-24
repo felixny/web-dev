@@ -2,11 +2,9 @@ import whoReducer from "./reducers/whoReducer";
 import tuitsReducer from "./reducers/tuitsReducer";
 import { combineReducers, createStore } from "redux";
 import { Provider } from "react-redux";
-import { Outlet } from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
 import './explore.css';
 import WhoToFollowList from "./WhoToFollowList";
-import TuitList from "./TuitList";
 import HomeScreen from "./HomeScreen";
 
 const reducer = combineReducers({ tuits: tuitsReducer, who: whoReducer})

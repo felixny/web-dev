@@ -8,7 +8,6 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 /* import ExploreScreen from './components/Tuiter/ExploreScreen/ExploreScreen';
 import HomeScreen from './components/Tuiter/HomeScreen/HomeScreen'; */
 import ExploreScreen from './components/TuiterA7/ExploreScreen/ExploreScreen';
-import HomeScreen from './components/TuiterA7/HomeScreen';
 import Tuiter from './components/TuiterA7';
 
 function App() {

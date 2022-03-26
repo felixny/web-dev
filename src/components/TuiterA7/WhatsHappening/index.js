@@ -29,7 +29,7 @@ const WhatsHappening = () => {
                     <td style={{ width: "100%" }}>
                         <textarea value={whatsHappening}
                             onChange={(event) => setWhatsHappening(event.target.value)}
-                            className="form-control" placeholder="What's happening?"></textarea>
+                            className="form-control-home" placeholder="What's happening?"></textarea>
                         <hr />
                         <span>
                             <a href="/#"><i className="far fa-image me-3"></i></a>

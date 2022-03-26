@@ -1,6 +1,6 @@
 .form {
   position: relative;
-  padding-right: rem;
+  padding-right: 0rem;
 }
 
 .form .fa-search {
@@ -9,14 +9,14 @@
   padding-top: 12px;
   left: 20px;
   color: black;
+  
 }
 
 .form span {
   position: absolute;
   right: 17px;
-  top: 13px;
   padding: 1px;
-  border-left: 1px solid #d1d5db;
+  border-left: 1px solid #000000;
 }
 
 .left-pan {
@@ -29,7 +29,7 @@
 
 .form-input {
   height: 40px;
-  text-indent: 33px;
+  text-indent: 40px;
 }
 
 .form-input:focus {
@@ -37,11 +37,12 @@
   border: none;
 }
 
-.form-control {
+.form-control{
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
 
   border-radius: 50px;
+  background-color: white;
 }
 
 @media (min-width: 100px) {

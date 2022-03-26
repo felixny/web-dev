@@ -1,9 +1,10 @@
-.form-control{
+.form-control-home{
     color: white;
     padding: 0px;
     width: 100%;
     padding-top: 15px;
     background-color: black;
+    border: none;
 }
 
 .wd-img-avatar {

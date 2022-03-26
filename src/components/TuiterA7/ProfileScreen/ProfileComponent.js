@@ -45,7 +45,7 @@ const ProfileComponent = () => {
                         <i className="fas fa-map-marker-alt" />
                         <span className="ms-1"> {profile.location} </span>
                         <i className="fas fa-link ms-3" />
-                        <span className="ms-1">  {profile.website} </span>
+                        <span className="ms-1">  <Link to={{ pathname: `${profile.website}`} }> {profile.website} </Link> </span>
                         <i className="fas fa-calendar-alt ms-3" />
                         <span className="ms-1"> Born {profile.dateOfBirth} </span>
                         <i className="fas fa-calendar-alt ms-3" />

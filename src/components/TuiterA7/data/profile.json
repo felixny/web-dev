@@ -1,0 +1,13 @@
+{
+    "name": "Felix Yamano",
+    "handle": "feriix.x",
+    "profilePicture": "../Images/react.png",
+    "bannerPicture": "../Images/elon.jpeg",
+    "bio": "Aspring software engineer.",
+    "website": "https://felixny.github.io/",
+    "location": "Boston, MA",
+    "dateOfBirth": "April 19, 1995",
+    "dateJoined": "April 2009",
+    "followingCount": 230,
+    "followersCount": 356
+}

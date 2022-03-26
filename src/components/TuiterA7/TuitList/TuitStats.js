@@ -12,7 +12,7 @@ const TuitStats = ({ tuit }) => {
             {tuit.stats.comments}
         </div>
         <div className="col">
-            <i className="fas fa-retuit me-2"></i>
+            <i className="fas fa-retweet me-2"></i>
             {tuit.stats.retuits}
         </div>
         <div className="col" onClick={likeTuit}>

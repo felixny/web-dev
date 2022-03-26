@@ -5,7 +5,7 @@ import React from "react";
 const PostSummaryList = () => {
     return (
         <>
-            <ul className="list-group ">
+            <ul className="list-group">
                 {posts.map(posts => {
                     return (
                         <div key = {posts.id}>

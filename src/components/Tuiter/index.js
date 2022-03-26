@@ -4,15 +4,15 @@ import ExploreScreen from "./ExploreScreen/ExploreScreen";
 /* import HomeScreen from "./HomeScreen/HomeScreen"; */
 /* import { Link, Route } from "react-router-dom"; */
 
-const Tuiter = () => {
+const TuiterA6 = () => {
     return (
         <>
             {/* <NavigationSidebar active="home" />
             <WhoToFollowListItem/>
             <PostSummaryList/> */}
-          <ExploreScreen/>
+          {/* <ExploreScreen/> */}
 
         </>
     )
 };
-export default Tuiter;
+export default TuiterA6;

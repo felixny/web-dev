@@ -1,3 +1,9 @@
+import '../explore.css';
+import react from "../Images/react.png";
+import node from "../Images/nodejs.png";
+import js from "../Images/javascript.png";
+import jq from "../Images/jquery.png"
+
 const PostSummaryItem = ({ posts }) => {
 
   if (posts.topic === '') {
@@ -6,21 +12,27 @@ const PostSummaryItem = ({ posts }) => {
     topic = (<mark className="wd-gray">{posts.topic}</mark>)
   }
 
+  var image = "";
+
   if (posts.id === '2') {
     var bordertop = <span className="wd-list-border-top"></span>
     var borderbot = <span className="wd-list-border-bottom"></span>
+    image = js;
   } else if (posts.id === '3') {
     bordertop = <span className=" wd-list-border-top"></span>
     borderbot = <span className="wd-list-border-bottom"></span>
+    image = jq;
   } else if (posts.id === '4') {
     bordertop = <span className="wd-list-border-top"></span>
+    image = node;
   } else {
     borderbot = <span className="wd-list-border-bottom"></span>
+    image = react;
   }
 
   return (
 
-    <ul className="row list-group ">
+    <ul className="row list-group wd-ms-2">
       {bordertop}
       <li className="list-group-item list-group-item-action d-flex justify-content-between ">
 
@@ -32,7 +44,7 @@ const PostSummaryItem = ({ posts }) => {
 
         </div>
         <div className="image-parent ">
-          <img src={posts.image} className="wd-img-icon" alt="icon" />
+          <img src={image} className="wd-img-icon" alt="icon" />
         </div>
       </li>
       {borderbot}

@@ -5,6 +5,7 @@ import space from "../Images/nodejs.png";
 import js from "../Images/javascript.png";
 import jq from "../Images/jquery.png";
 import java from "../Images/java.jpg";
+import starship from "../Images/starship.jpeg";
 import './tuitlist.css';
 import TuitStats from "./TuitStats";
 
@@ -49,7 +50,7 @@ const TuitListItem = ({ tuit }) => {
                             </div>
                             {
                                 tuit.attachments && tuit.attachments.image &&
-                                <img src={tuit.attachments.image}
+                                <img src={starship}
                                     className="mt-2 wd-border-radius-20px"
                                     style={{ width: "100%" }}
                                     alt="tuit pic" />

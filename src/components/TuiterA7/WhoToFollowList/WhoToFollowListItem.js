@@ -6,7 +6,7 @@ import nasa from '../Images/nasa.png';
 import tesla from '../Images/tesla.png';
 
 
-const WhoToFollowList = ({ who }) => {
+const WhoToFollowListItem = ({ who }) => {
     var image = "";
 
     if (who.id === '1') {
@@ -54,4 +54,4 @@ const WhoToFollowList = ({ who }) => {
     </>
     );
 }
-export default WhoToFollowList;
+export default WhoToFollowListItem;

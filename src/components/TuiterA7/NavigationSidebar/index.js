@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavigationSidebar = ({ active = 'explore' }
+const NavigationSidebar = ({ active = 'home' }
 ) => {
     return (
         <>
             <div className="list-group">
                 <Link to="/" className="list-group-item list-group-item-action  "><i className="fab fa-twitter"></i></Link>
 
-                <Link to="/tuiterA7/home" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'home' ? 'active' : ''}`}><i
+                <Link to="/TuiterA7/home" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'home' ? 'active' : ''}`}><i
                     className="fas fa-house "></i> <span className="d-flex d-none d-xl-block ms-1"> Home</span></Link>
 
-                <Link to="/tuiterA7/explore" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'explore' ? 'active' : ''}`}><i
+                <Link to="/TuiterA7/explore" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'explore' ? 'active' : ''}`}><i
                     className="fa-solid fa-hashtag"></i>
                     <span className="d-flex d-none d-xl-block ms-1">Explore</span></Link>
 
@@ -27,7 +27,7 @@ const NavigationSidebar = ({ active = 'explore' }
                 <Link id="Lists" to="#" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'lists' ? 'active' : ''}`}><i
                     className="fa-solid fa-list"></i> <span className="d-none d-xl-block ms-1">Lists</span></Link>
 
-                <Link id="Profile" to="#" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'profile' ? 'active' : ''}`}><i
+                <Link id="Profile" to="/TuiterA7/profile" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'profile' ? 'active' : ''}`}><i
                     className="fa-solid fa-user"></i> <span className="d-none d-xl-block ms-1">Profile</span></Link>
 
                 <Link id=" More" to="#" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'more' ? 'active' : ''}`}><i

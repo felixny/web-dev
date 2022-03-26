@@ -50,7 +50,7 @@ const ExploreComponent = () => {
         </div>
 
         {/* <!-- list begin --> */}
-        <div className="row list-group wd-mx-1-custom">
+        <div className="row list-group wd-postsummary">
           <PostSummaryList />
         </div>
 

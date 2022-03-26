@@ -44,7 +44,9 @@ const ProfileComponent = () => {
                     <div>
                         <i className="fas fa-map-marker-alt" />
                         <span className="ms-1"> {profile.location} </span>
-                        <i className="fas fa-birthday-cake ms-3" />
+                        <i className="fas fa-link ms-3" />
+                        <span className="ms-1">  {profile.website} </span>
+                        <i className="fas fa-calendar-alt ms-3" />
                         <span className="ms-1"> Born {profile.dateOfBirth} </span>
                         <i className="fas fa-calendar-alt ms-3" />
                         <span className="ms-1"> Joined {profile.dateJoined} </span><br />

@@ -1,0 +1,14 @@
+[
+    {
+        "id" : "1",
+        "navi1": "/tuiter/"
+    },
+    {
+        "id" : "2",
+        "navi2": "/tuiter/explore"
+    },
+    {
+        "id" : "3",
+        "avatarIcon": "/tuiter/profile"
+    }
+]

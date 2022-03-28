@@ -1,18 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
-const NavigationSidebar = ({ active = '' }) => {
+const NavigationSidebar = ({ active = "" }) => {
     return (
         <>
             <div className="list-group">
                 <Link to="/" className="list-group-item list-group-item-action  "><i className="fab fa-twitter"></i></Link>
 
-                <Link to="/tuiter/" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'home' ? 'active' : ''}`}><i
-                    className="fas fa-house "></i> <span className="d-flex d-none d-xl-block ms-1"> Home</span></Link>
+                <NavLink to="/tuiter/" activeClassName="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'home' ? 'active' : ''}`}><i
+                    className="fas fa-house "></i> <span className="d-flex d-none d-xl-block ms-1"> Home</span></NavLink>
 
-                <Link to="/tuiter/explore" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'Explore' ? 'active' : ''}`}><i
+                {/* <Link to="/tuiter/explore" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'explore' ? 'active' : ''}`}><i
                     className="fa-solid fa-hashtag"></i>
                     <span className="d-flex d-none d-xl-block ms-1">Explore</span></Link>
+ */}
+                <NavLink to="/tuiter/explore" activeClassName="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'explore' ? 'active' : ''}`}><i
+                    className="fa-solid fa-hashtag"></i>
+                    <span className="d-flex d-none d-xl-block ms-1">Explore</span></NavLink>
 
                 <Link id="Notificaton" to="#" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'notifications' ? 'active' : ''}`}><i
                     className="fa-solid fa-bell"></i> <span className="d-none d-xl-block ms-1"> Notifications</span></Link>
@@ -26,8 +30,8 @@ const NavigationSidebar = ({ active = '' }) => {
                 <Link id="Lists" to="#" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'lists' ? 'active' : ''}`}><i
                     className="fa-solid fa-list"></i> <span className="d-none d-xl-block ms-1">Lists</span></Link>
 
-                <Link id="Profile" to="/tuiter/profile" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'Profile' ? 'active' : ''}`}><i
-                    className="fa-solid fa-user"></i> <span className="d-none d-xl-block ms-1">Profile</span></Link>
+                <NavLink id="Profile" to="/tuiter/profile" activeClassName="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'profile' ? 'active' : ''}`}><i
+                    className="fa-solid fa-user"></i> <span className="d-none d-xl-block ms-1">Profile</span></NavLink>
 
                 <Link id=" More" to="#" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'more' ? 'active' : ''}`}><i
                     className="fa-solid fa-ellipsis"></i><span className="d-none d-xl-block ms-1  "> More</span></Link>

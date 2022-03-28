@@ -25,7 +25,7 @@ function App() {
               <Route index element={<HomeScreen />} />
               <Route path="explore" element={<ExploreScreen />} />
               <Route path="profile" element={<ProfileScreen />} />
-              <Route path="editprofile" element={<ProfileEditScreen />} />
+              <Route path="editprofile" element={<ProfileEditScreen /> } />
             </Route>
           </Route>
         </Routes>

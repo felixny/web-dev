@@ -4,11 +4,7 @@ import profileReducers from "./reducers/profileReducer";
 import { combineReducers, createStore } from "redux";
 import { Provider } from "react-redux";
 import './explore.css';
-import HomeScreen from "./HomeScreen";
-import ProfileScreen from "./ProfileScreen";
-import { Outlet, Route, Routes } from "react-router-dom";
-import ProfileEditScreen from "./ProfileEditScreen";
-import ExploreScreen from "./ExploreScreen/ExploreScreen";
+import { Outlet } from "react-router-dom";
 import WhoToFollowList from "./WhoToFollowList"
 import NavigationSidebar from "./NavigationSidebar";
 
@@ -20,7 +16,7 @@ const TuiterA7 = () => {
         <Provider store={store}>
             <div className="row mt-2">
                 <div className="col-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar /> </div>
+                    <NavigationSidebar active="" /> </div>
                 <div className="col-10 col-lg-7 col-xl-6">
                     <Outlet />
                 </div>

@@ -22,7 +22,7 @@ const ProfileComponent = () => {
             <div className="wd-content-position">
                 <div>
                     <img src={elon} className="wd-profileImage" alt="prof" />
-                    <Link to="/TuiterA7/editprofile">
+                    <Link to="/tuiter/editprofile">
                         <button
                             className="btn btn-light rounded-pill wd-editButton fw-bold">
                             Edit Profile

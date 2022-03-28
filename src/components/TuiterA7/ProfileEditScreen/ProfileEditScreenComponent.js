@@ -34,7 +34,7 @@ const ProfileEditScreenComponent = () => {
         <>
             <div className="row align-items-center">
                 <div className="col-1 ">
-                    <Link to="/TuiterA7/profile">
+                    <Link to="/tuiter/profile">
                         <i className="fas fa-times wd-title-color" />
                     </Link>
                 </div>
@@ -42,7 +42,7 @@ const ProfileEditScreenComponent = () => {
                     <span className="fw-bolder wd-title-color">Edit Profile</span>
                 </div>
                 <div className="col-2">
-                    <Link to="/TuiterA7/profile">
+                    <Link to="/tuiter/profile">
                         <button className="btn btn-light rounded-pill " onClick={saveProfile}>
                             Save
                         </button>

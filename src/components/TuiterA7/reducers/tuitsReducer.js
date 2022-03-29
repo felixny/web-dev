@@ -25,6 +25,7 @@ const tuitsReducer = (state = tuits, action) => {
                 tuit: action.tuit,
                 _id: (new Date()).getTime() + '',
                 userName: "ReactJS",
+                handle: "ReactJS",
                 stats: {
                     retuits: 111,
                     likes: 222,

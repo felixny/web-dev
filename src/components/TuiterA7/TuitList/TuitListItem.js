@@ -1,5 +1,5 @@
 import React from "react";
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import react from "../Images/react.png";
 import space from "../Images/nodejs.png";
 import js from "../Images/javascript.png";
@@ -13,7 +13,7 @@ import TuitStats from "./TuitStats";
 const TuitListItem = ({ tuit }) => {
     const dispatch = useDispatch();
     const deleteTuit = () => {
-        dispatch({type: 'delete-tuit', tuit})
+        dispatch({ type: 'delete-tuit', tuit })
     };
 
     var image = "";
@@ -40,7 +40,7 @@ const TuitListItem = ({ tuit }) => {
                                 src={image}
                                 alt="avatar" />
                         </td>
-                        <td className="ps-3" style={{ width: '100%' }}>
+                        <td className="ps-3 wd-style" >
                             <i onClick={deleteTuit} className="fa fa-remove fa-pull-right"></i>
                             <span className="fw-bold">{tuit.userName}</span>
                             {tuit.verified && <i className="ms-1 fas fa-badge-check"></i>}
@@ -49,8 +49,7 @@ const TuitListItem = ({ tuit }) => {
                                 {tuit.tuit}
                             </div>
                             {
-                                tuit.attachments && tuit.attachments.image &&
-                                <img src={starship}
+                                tuit.attachments && tuit.attachments.image && <img src={starship}
                                     className="mt-2 wd-border-radius-20px"
                                     style={{ width: "100%" }}
                                     alt="tuit pic" />
@@ -65,7 +64,7 @@ const TuitListItem = ({ tuit }) => {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen></iframe>
                             }
-                            <TuitStats tuit={tuit}/>
+                            <TuitStats tuit={tuit} />
                         </td>
                     </tr>
                 </tbody>

@@ -1,12 +1,12 @@
 {
-    "name": "Felix Yamano",
-    "handle": "feriix.x",
+    "name": "DPR LIVE",
+    "handle": "guigam",
     "profilePicture": "../Images/react.png",
     "bannerPicture": "../Images/elon.jpeg",
-    "bio": "Aspring software engineer.",
+    "bio": "Web Development",
     "website": "netflix.com",
     "location": "Boston, MA",
-    "dateOfBirth": "April 19, 1995",
+    "dateOfBirth": "April 19, 2000",
     "dateJoined": "April 2009",
     "followingCount": 230,
     "followersCount": 356

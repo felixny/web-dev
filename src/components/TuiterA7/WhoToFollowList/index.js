@@ -1,6 +1,6 @@
 import React from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 
 const WhoToFollowList = () => {
@@ -8,13 +8,13 @@ const WhoToFollowList = () => {
 
     return (
         <>
-            <ul className="list-group">           
+            <ul className="list-group">
                 <a href="/#" className="list-group-item wd-list-group "><strong>Who to follow</strong></a>
                 {who.map(w => {
                     return (
 
                         <div key={w.id} >
-                            <WhoToFollowListItem  who={w} />
+                            <WhoToFollowListItem who={w} />
                         </div>
                         /* tuits.map(tuit => <TuitListItem key={tuit._id} tuit={tuit} /> */
                     );

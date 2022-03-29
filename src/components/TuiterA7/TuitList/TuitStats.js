@@ -6,6 +6,15 @@ const TuitStats = ({ tuit }) => {
     const likeTuit = () => {
         dispatch({ type: 'like-tuit', tuit });
     };
+
+    var color = '';
+
+    if (tuit.liked) {
+        color = 'red';
+    } else {
+        color = 'white';
+    }
+
     return (<div className="row mt-2">
         <div className="col">
             <i className="far fa-comment me-2"></i>
@@ -17,13 +26,10 @@ const TuitStats = ({ tuit }) => {
         </div>
         <div className="col" onClick={likeTuit}>
             {
-                tuit.liked &&
-                <i className="fas fa-heart me-2"
-                    style={{ color: tuit.liked ? 'red' : "white" }}></i>
+                tuit.liked && <i className="fas fa-heart me-2" style={{ color }}></i>
             }
             {
-                !tuit.liked &&
-                <i className="far fa-heart me-2"></i>
+                !tuit.liked && <i className="far fa-heart me-2"></i>
             }
             {tuit.stats.likes}
         </div>

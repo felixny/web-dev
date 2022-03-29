@@ -10,6 +10,16 @@
 .wd-img-avatar {
     width: 48px;
     margin: 16px;
-
 }
 
+.wd-margin-bot {
+    margin-bottom: 16px;
+}
+
+.wd-vertical-top {
+    vertical-align: top;
+}
+
+.wd-td-style {
+    width: 100%;
+}

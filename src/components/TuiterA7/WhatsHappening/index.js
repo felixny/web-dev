@@ -18,15 +18,15 @@ const WhatsHappening = () => {
     var image = elon;
 
     return (<>
-        <table style={{ marginBottom: '16px' }}>
+        <table className="wd-margin-bot">
             <tbody>
                 <tr>
-                    <td style={{ verticalAlign: 'top' }}>
+                    <td className="wd-vertical-top">
                         <img src={image} alt="avatar"
                             className="rounded-circle wd-img-avatar"
                         />
                     </td>
-                    <td style={{ width: "100%" }}>
+                    <td className="wd-td-style">
                         <textarea value={whatsHappening}
                             onChange={(event) => setWhatsHappening(event.target.value)}
                             className="form-control-home" placeholder="What's happening?"></textarea>

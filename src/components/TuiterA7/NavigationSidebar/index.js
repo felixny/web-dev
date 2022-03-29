@@ -7,14 +7,14 @@ const NavigationSidebar = ({ active = "" }) => {
             <div className="list-group">
                 <Link to="/" className="list-group-item list-group-item-action  "><i className="fab fa-twitter"></i></Link>
 
-                <NavLink to="/tuiter/" activeClassName="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'home' ? 'active' : ''}`}><i
+                <NavLink to="/tuiter/" activeclassname="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'home' ? 'active' : ''}`}><i
                     className="fas fa-house "></i> <span className="d-flex d-none d-xl-block ms-1"> Home</span></NavLink>
 
                 {/* <Link to="/tuiter/explore" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'explore' ? 'active' : ''}`}><i
                     className="fa-solid fa-hashtag"></i>
                     <span className="d-flex d-none d-xl-block ms-1">Explore</span></Link>
  */}
-                <NavLink to="/tuiter/explore" activeClassName="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'explore' ? 'active' : ''}`}><i
+                <NavLink to="/tuiter/explore" activeclassname="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'explore' ? 'active' : ''}`}><i
                     className="fa-solid fa-hashtag"></i>
                     <span className="d-flex d-none d-xl-block ms-1">Explore</span></NavLink>
 
@@ -30,7 +30,7 @@ const NavigationSidebar = ({ active = "" }) => {
                 <Link id="Lists" to="#" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'lists' ? 'active' : ''}`}><i
                     className="fa-solid fa-list"></i> <span className="d-none d-xl-block ms-1">Lists</span></Link>
 
-                <NavLink id="Profile" to="/tuiter/profile" activeClassName="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'profile' ? 'active' : ''}`}><i
+                <NavLink id="Profile" to="/tuiter/profile" activeclassname="active" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'profile' ? 'active' : ''}`}><i
                     className="fa-solid fa-user"></i> <span className="d-none d-xl-block ms-1">Profile</span></NavLink>
 
                 <Link id=" More" to="#" className={`list-group-item list-group-item-action d-flex align-items-center ${active === 'more' ? 'active' : ''}`}><i

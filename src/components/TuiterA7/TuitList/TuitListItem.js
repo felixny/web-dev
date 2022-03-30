@@ -7,8 +7,7 @@ import jq from "../Images/jquery.png";
 import java from "../Images/java.jpg";
 import starship from "../Images/starship.jpeg";
 import './tuitlist.css';
-import TuitStats from "./TuitStats";
-import { updateTuit, createTuit, deleteTuit, findAllTuits } from "../../../actions/tuits-actions";
+import { updateTuit, createTuit, deleteTuit} from "../../../actions/tuits-actions";
 
 
 const TuitListItem = ({ tuit }) => {

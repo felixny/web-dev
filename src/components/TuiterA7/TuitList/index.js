@@ -8,8 +8,7 @@ const TuitList = () => {
     const dispatch = useDispatch();
 
     useEffect(() =>
-        findAllTuits(dispatch),
-        []);
+        findAllTuits(dispatch),);
 
 
 

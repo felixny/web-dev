@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import react from "../Images/react.png";
 import space from "../Images/nodejs.png";
@@ -8,13 +8,14 @@ import java from "../Images/java.jpg";
 import starship from "../Images/starship.jpeg";
 import './tuitlist.css';
 import TuitStats from "./TuitStats";
+import { updateTuit, createTuit, deleteTuit, findAllTuits } from "../../../actions/tuits-actions";
 
 
 const TuitListItem = ({ tuit }) => {
     const dispatch = useDispatch();
-    const deleteTuit = () => {
-        dispatch({ type: 'delete-tuit', tuit })
-    };
+
+    const [newTuit, setNewTuit] =
+        useState({ tuit: 'New tuit' });
 
     var image = "";
 
@@ -41,12 +42,37 @@ const TuitListItem = ({ tuit }) => {
                                 alt="avatar" />
                         </td>
                         <td className="ps-3 wd-style" >
-                            <i onClick={deleteTuit} className="fa fa-remove fa-pull-right"></i>
+                            <i className="fas fa-remove float-end" onClick={() => deleteTuit(dispatch, tuit)}></i>
+                            <button onClick={() =>
+                                createTuit(dispatch, newTuit)}
+                                className="btn btn-primary float-end">
+                                Tuit
+                            </button>
+                            <textarea className="form-control w-75"
+                                onChange={(e) =>
+                                    setNewTuit({
+                                        ...newTuit,
+                                        tuit: e.target.value
+                                    })}></textarea>
                             <span className="fw-bold">{tuit.userName}</span>
                             {tuit.verified && <i className="ms-1 fas fa-badge-check"></i>}
                             <span className="ms-1 text-secondary">@{tuit.handle}</span>
                             <div>
                                 {tuit.tuit}
+                            </div>
+                            <div>
+                                Likes: {tuit.likes}
+                                <i onClick={() => updateTuit(dispatch, {
+                                    ...tuit,
+                                    likes: tuit.likes + 1
+                                })} className="far fa-thumbs-up ms-2"></i>
+                            </div>
+                            <div>
+                                Dislikes: {tuit.dislikes}
+                                <i onClick={() => updateTuit(dispatch, {
+                                    ...tuit,
+                                    dislikes: tuit.dislikes - 1
+                                })} className="far fa-thumbs-down ms-2"></i>
                             </div>
                             {
                                 tuit.attachments && tuit.attachments.image && <img src={starship}
@@ -64,7 +90,7 @@ const TuitListItem = ({ tuit }) => {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen></iframe>
                             }
-                            <TuitStats tuit={tuit} />
+                            {/*   <TuitStats tuit={tuit} /> */}
                         </td>
                     </tr>
                 </tbody>

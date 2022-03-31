@@ -33,13 +33,13 @@ function App() {
           A7 Labs |
         </Link>
         <Link to="/tuiter/">
-          A7 Home |
+          A8 Home |
         </Link>
         <Link to="/tuiter/explore">
-          A7 Explore |
+          A8 Explore |
         </Link>
         <Link to="/tuiter/profile">
-          A7 Profile |
+          A8 Profile |
         </Link>
       </div>
     </BrowserRouter>

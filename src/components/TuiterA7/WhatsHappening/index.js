@@ -2,18 +2,14 @@ import React, { useState } from "react";
 import './index.css';
 import elon from "../Images/elon_p.jpeg";
 import { useDispatch } from "react-redux";
+import { createTuit } from "../../../actions/tuits-actions";
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening] = useState('');
+    /* let [whatsHappening, setWhatsHappening] = useState(''); */
     const dispatch = useDispatch();
 
-    const tuitClickHandler = () => {
-        dispatch({
-            type: 'create-tuit',
-            tuit: whatsHappening
-        });
-      
-    }
+    const [newTuit, setNewTuit] =
+        useState({ tuit: 'New tuit' });
 
     var image = elon;
 
@@ -27,8 +23,12 @@ const WhatsHappening = () => {
                         />
                     </td>
                     <td className="wd-td-style">
-                        <textarea value={whatsHappening}
-                            onChange={(event) => setWhatsHappening(event.target.value)}
+                        <textarea
+                            onChange={(e) =>
+                                setNewTuit({
+                                    ...newTuit,
+                                    tuit: e.target.value
+                                })}
                             className="form-control-home" placeholder="What's happening?"></textarea>
                         <hr />
                         <span>
@@ -37,7 +37,8 @@ const WhatsHappening = () => {
                             <a href="/#"><i className="far fa-smile me-3"></i></a>
                             <a href="/#"><i className="far fa-calendar me-3"></i></a>
                         </span>
-                        <button onClick={tuitClickHandler} className="btn btn-primary fa-pull-right rounded-pill">
+                        <button onClick={() =>
+                            createTuit(dispatch, newTuit)} className="btn btn-primary fa-pull-right rounded-pill">
                             Tweet
                         </button>
                     </td>

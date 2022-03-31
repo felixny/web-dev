@@ -47,12 +47,14 @@ const TuitListItem = ({ tuit }) => {
                                 className="btn btn-primary float-end">
                                 Tuit
                             </button>
+
                             <textarea className="form-control w-75"
                                 onChange={(e) =>
                                     setNewTuit({
                                         ...newTuit,
                                         tuit: e.target.value
                                     })}></textarea>
+                                    
                             <span className="fw-bold">{tuit.userName}</span>
                             {tuit.verified && <i className="ms-1 fas fa-badge-check"></i>}
                             <span className="ms-1 text-secondary">@{tuit.handle}</span>

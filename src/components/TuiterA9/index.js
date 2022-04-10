@@ -12,7 +12,7 @@ const reducer = combineReducers({ tuits: tuitsReducer, who: whoReducer, profile:
 const store = createStore(reducer);
 
 
-const TuiterA7 = () => {
+const TuiterA9 = () => {
     return (
         <Provider store={store}>
             <div className="row mt-2">
@@ -28,5 +28,5 @@ const TuiterA7 = () => {
         </Provider>
     );
 };
-export default TuiterA7;
+export default TuiterA9;
 

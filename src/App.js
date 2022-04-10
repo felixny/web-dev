@@ -4,11 +4,11 @@ import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components//HelloWorld";
 import Labs7 from "./components/Labs/A7";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import HomeScreen from './components/TuiterA7/HomeScreen';
-import ExploreScreen from './components/TuiterA7/ExploreScreen/ExploreScreen';
-import TuiterA7 from './components/TuiterA7';
-import ProfileScreen from './components/TuiterA7/ProfileScreen';
-import ProfileEditScreen from './components/TuiterA7/ProfileEditScreen';
+import HomeScreen from './components/TuiterA9/HomeScreen';
+import ExploreScreen from './components/TuiterA9/ExploreScreen/ExploreScreen';
+import TuiterA7 from './components/TuiterA9';
+import ProfileScreen from './components/TuiterA9/ProfileScreen';
+import ProfileEditScreen from './components/TuiterA9/ProfileEditScreen';
 
 
 function App() {

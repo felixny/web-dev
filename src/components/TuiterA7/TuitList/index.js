@@ -8,9 +8,7 @@ const TuitList = () => {
     const dispatch = useDispatch();
 
     useEffect(() =>
-        findAllTuits(dispatch),);
-
-
+        findAllTuits(dispatch),[]);
 
     return (
         <ul className="list-group">
